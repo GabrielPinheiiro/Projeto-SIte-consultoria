@@ -6,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fundo preto com detalhes azul*/
+
 :root {
     --primary-color: #00d4ff;
     --secundary-color: black;
@@ -16,19 +16,19 @@
     --text-main: #e0e0e0;       
 }
 
-/* Estilização do corpo da página e do fundo */
+
 body {
     background-color: var(--bg-body);
     background-image:
         linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
-    background-size: 30px 30px;  /* espaçaemento entre as linhas da textura */
+    background-size: 30px 30px;  
     color: var(--trihd-color);
     line-height: 1.6;
-    /* linhas horizontais e verticais, deixando um funco como se fosse uma textura */
+    
 }
 
-/* Estilização do cabeçalho*/
+
 header {
     background-color: var(--secundary-color);
     backdrop-filter: blur(10px);
@@ -39,9 +39,8 @@ header {
     border-bottom: 1px solid var(--primary-color);
 }
 
-/*estilo do logo com detalhes em azul*/
-.logo {
-    color: var(--trihd-color);
+
+.logo {                                                      
     font-size: 1.5rem;               
     font-weight: bold;
     text-transform: uppercase;
@@ -51,17 +50,16 @@ header {
 .logo span {
     color: var(--primary-color);
     text-shadow: 0 0 8px var(--primary-color);
-    /* Efeito letra trannsbordando */
+    
 }
 
-/* organização da navegação, centralização da linha e espaçamento */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* centralização e removendo o tracinho - */
+
 nav ul {
     display: flex;
     list-style: none;
@@ -78,12 +76,12 @@ nav ul li a {
     transition: 0.3s;
 }
 
-/*Efeito ananimado de transição suave para a mudança de cor */ 
+
 nav ul li a:hover {
     color: var(--primary-color);
 }
 
-/*centralização do mini texto e do título*/
+
 #home {
     padding: 6rem 5%; 
     display: flex;
@@ -93,7 +91,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-/* Estilização do título e do parágrafo */
+
 #home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -105,6 +103,7 @@ nav ul li a:hover {
     color: var(--text-main); 
     max-width: 50rem; 
 }
+
 
 #servicos {
     padding: 4rem 5%;
@@ -120,33 +119,32 @@ nav ul li a:hover {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* responsividade dos cards */
-    gap: 2rem;                                                    /* espaçamento entre os cards */
-    margin-top: 2rem;                                             /* espaçamento entre o título e os cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    gap: 2rem;                                                    
+    margin-top: 2rem;                                             
 }
 
-/* Estilização dos Cards */
+
 article {
     background-color: var(--bg-card); 
     padding: 2rem;
-    border-radius: 12px;                             /*cantos redondos */
+    border-radius: 12px;                             
     border: 1px solid var(--bg-card);                
-    box-shadow: 0 10px 30px var(--secundary-color);  /*sombra no card */
+    box-shadow: 0 10px 30px var(--secundary-color);  
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;                                /* efeito ficar dentro do card*/
+    overflow: hidden;                              
 }
 
-/* Efeito animado para os cards */
+
 article:hover {
-    transform: translateY(-10px);                  /* efeito de levitar*/
+    transform: translateY(-10px);                  
     border-color: var(--primary-color);
     background-color: var(--bg-card); 
 }
 
-/* Detalhe da borda lateral azul */
 article::before {
-    content: "";                                /* borda na leteal do card*/
+    content: "";                               
     position: absolute;
     left: 0;
     top: 0;
@@ -155,7 +153,6 @@ article::before {
     background: var(--primary-color);
 }
 
-/* Títulos dos cards*/
 article h3 {
     color: var(--primary-color); 
     margin-bottom: 15px;
@@ -163,38 +160,37 @@ article h3 {
     text-shadow: 0 0 8px var(--primary-color);
 }
 
-/* Texto das descrições */
 article p {
     color: var(--text-main);
     font-size: 1rem;
 }
 
-/* Estilo da Seção de Contato */
+
 #contato {
     padding: 6rem 5%;
     text-align: center;
     background-color: var(--secundary-color);
-        backdrop-filter: blur(10px);                          /* efeito de desfoque */
+        backdrop-filter: blur(10px);                          
         border-top: 5px solid var(--primary-color);
         border-bottom: 5px solid var(--primary-color);         
 }
 
 #contato h2 {
     color: var(--primary-color);
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.contato-container p {   /* quando aparecer com o ponto no inicio, explicar que esse é o codigo para estilizar o varivael do HTML*/
+.contato-container p {   
     margin-bottom: 2rem;
     font-size: 1.2rem;
 }
 
-/* Parte Inovação */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Botão de WhatsApp (parte inovação) */
 .btn-whatsapp {
     display: inline-block;
     background-color: transparent;
@@ -213,5 +209,4 @@ html {
     background-color: var(--primary-color);
     color: var(--secundary-color);
     box-shadow: 0 0 20px var(--primary-color);
-    transform: scale(1.05);
 }
